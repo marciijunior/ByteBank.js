@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marciijunior/ByteBank.js.git"
-  },
-  "author": "MarciiJunior",
+  "author": "",
   "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/marciijunior/ByteBank.js/issues"
-  },
-  "homepage": "https://github.com/marciijunior/ByteBank.js#readme"
+  "type": "module"
 }
