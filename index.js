@@ -22,7 +22,7 @@ contaCliente.depositar(1000);
 
 const contas = [contaCliente]; // Lista de contas para gerenciamento
 
-// Menu Principal
+// Menu Principal para que o usuário escolha o tipo de login
 function exibirMenu() {
     console.log("\n=== Menu Principal ===");
     console.log("1. Login como Gerente");
@@ -67,7 +67,8 @@ function loginUsuario(usuario, tipoUsuario) {
     });
 }
 
-// Menu de Operações Bancárias
+// Menu de Operações Bancárias para cada tipo de usuário
+// O menu de operações varia dependendo do tipo de usuário (Cliente, Gerente ou Diretor)
 function exibirMenuOperacoes(usuario, tipoUsuario) {
     console.log(`\n=== Menu de Operações (${tipoUsuario}) ===`);
     console.log("1. Depositar");
@@ -83,6 +84,7 @@ function exibirMenuOperacoes(usuario, tipoUsuario) {
     rl.question("Escolha uma opção: ", (opcao) => tratarOperacao(opcao, usuario, tipoUsuario));
 }
 
+// Função para tratar as operações bancárias
 function tratarOperacao(opcao, usuario, tipoUsuario) {
     switch (opcao) {
         case "1":
@@ -154,5 +156,4 @@ function tratarOperacao(opcao, usuario, tipoUsuario) {
     }
 }
 
-// Inicia o menu
 exibirMenu();
